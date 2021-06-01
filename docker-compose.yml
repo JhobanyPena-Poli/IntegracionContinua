@@ -1,6 +1,8 @@
 version: '3'
 
 services:
+
+  # Contenedor de MySql
   mysql:
     image: mysql/mysql-server:latest
     container_name: docker-mysql
@@ -13,12 +15,14 @@ services:
       - "3306:3306"
     restart: always
     
+  # Contenedor de php5
   web:
     image: nimmis/apache-php5
     container_name: docker-php
     ports:
       - "80:80"
 
+# Se define una red virtual por defecto
 networks:
     default:
         driver: bridge
