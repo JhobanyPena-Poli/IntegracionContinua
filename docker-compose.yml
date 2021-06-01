@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql/mysql-server:latest
+    container_name: docker-mysql
+    environment:
+      MYSQL_DATABASE: myDataBase
+      MYSQL_USER: sa
+      MYSQL_PASSWORD: Exito123*
+      MYSQL_ROOT_PASSWORD: P@$$w0rd
+    ports:
+      - "3306:3306"
+    restart: always
+    
+  web:
+    image: nimmis/apache-php5
+    container_name: docker-php
+    ports:
+      - "80:80"
+    links:
+      - mysql
+
+networks:
+    default:
+        driver: bridge
