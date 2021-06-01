@@ -1,4 +1,10 @@
 Integrantes Trabajo Colaborativo para el modulo de Integracion Continua.
 
 > Peña Ortiz Jhobany - Código: 1911021052
+<<<<<<< HEAD
 > César Adolfo Guasca Asencio - Código: 0910012939
+=======
+> Torres Torres Alfonso Giovanny - Codigo: 1811027101
+> Efren Bohorquez Vargas codigo -- 100258167
+> Leguizamon Heredia Laura Viviana Código 1811023564
+>>>>>>> 684c99e167dedca401bf8b0b9b80e2a9635e6ff0
